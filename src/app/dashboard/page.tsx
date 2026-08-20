@@ -12,16 +12,27 @@ export default async function DashboardPage() {
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-ink-soft">
           Dashboard
         </p>
-        <h1 className="mt-2 font-display text-3xl text-ink sm:text-4xl">
-          {menu.business.name}
-        </h1>
-        <p className="mt-1 text-sm text-ink-soft">
-          Edita el menú aquí. Los cambios se reflejan de inmediato en{" "}
-          <a href="/menu" className="underline decoration-terracotta underline-offset-2">
-            /menu
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <h1 className="mt-2 font-display text-3xl text-ink sm:text-4xl">
+              {menu.business.name}
+            </h1>
+            <p className="mt-1 text-sm text-ink-soft">
+              Edita el menú aquí. Los cambios se reflejan de inmediato en{" "}
+              <a href="/menu" className="underline decoration-terracotta underline-offset-2">
+                /menu
+              </a>
+              .
+            </p>
+          </div>
+
+          <a
+            href="/dashboard/qr"
+            className="mt-2 shrink-0 rounded-lg border border-line px-4 py-2 text-sm font-semibold text-ink-soft transition-colors hover:border-terracotta hover:text-terracotta"
+          >
+            Ver código QR
           </a>
-          .
-        </p>
+        </div>
       </header>
 
       <div className="mx-auto max-w-4xl px-4 pt-8 sm:px-8">
