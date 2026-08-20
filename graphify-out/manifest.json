@@ -12,8 +12,8 @@
     "semantic_hash": "5cc89077d438e3d0d0a8308ab7e06a5a"
   },
   "data/menu.json": {
-    "mtime": 1787224519.6998808,
-    "seen": 1787227032.5974324,
+    "mtime": 1787230136.4895453,
+    "seen": 1787231592.280409,
     "ast_hash": "90a19fd1619fcf61314f7ca00be2c5b4",
     "semantic_hash": "90a19fd1619fcf61314f7ca00be2c5b4"
   },
@@ -102,15 +102,33 @@
     "semantic_hash": "9c8a7fedf531a03fe5de5e3218f928ba"
   },
   "src/lib/menu.ts": {
-    "mtime": 1787224551.6198802,
-    "seen": 1787227032.59744,
-    "ast_hash": "47b1b8b4577b25d5548c42b7cc41e6b4",
-    "semantic_hash": "47b1b8b4577b25d5548c42b7cc41e6b4"
+    "mtime": 1787229982.1495414,
+    "seen": 1787231592.2804236,
+    "ast_hash": "0c9c6f2e2b3bd1f4c66cd99072967e35",
+    "semantic_hash": "0c9c6f2e2b3bd1f4c66cd99072967e35"
   },
   "Documentation/Progress/Fase-1-menu-publico.md": {
-    "mtime": 1787226652.5088725,
-    "seen": 1787227032.597443,
-    "ast_hash": "f9208491fc0f270c94253d84ec8f4f17",
-    "semantic_hash": "f9208491fc0f270c94253d84ec8f4f17"
+    "mtime": 1787227149.768861,
+    "seen": 1787231592.2804315,
+    "ast_hash": "5398cbb1d4084cb47098b63ee0da55fe",
+    "semantic_hash": "5398cbb1d4084cb47098b63ee0da55fe"
+  },
+  "src/app/dashboard/actions.ts": {
+    "mtime": 1787229987.6295416,
+    "seen": 1787231592.2804155,
+    "ast_hash": "91c4b5ce38b1145fd8db0925d896cca4",
+    "semantic_hash": "91c4b5ce38b1145fd8db0925d896cca4"
+  },
+  "src/app/dashboard/page.tsx": {
+    "mtime": 1787230877.809564,
+    "seen": 1787231592.280417,
+    "ast_hash": "ae261c0f564182efe2d5c9790bbf2bb9",
+    "semantic_hash": "ae261c0f564182efe2d5c9790bbf2bb9"
+  },
+  "Documentation/Progress/Fase-2-persistencia-dashboard.md": {
+    "mtime": 1787231165.6055713,
+    "seen": 1787231592.280433,
+    "ast_hash": "e9dbfb8aa27ec728df0ad0b444328bcd",
+    "semantic_hash": "e9dbfb8aa27ec728df0ad0b444328bcd"
   }
 }
