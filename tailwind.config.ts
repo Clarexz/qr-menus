@@ -9,8 +9,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        cream: "var(--milpa-cream)",
+        card: "var(--milpa-card)",
+        ink: "var(--milpa-ink)",
+        "ink-soft": "var(--milpa-ink-soft)",
+        terracotta: {
+          DEFAULT: "var(--milpa-terracotta)",
+          dark: "var(--milpa-terracotta-dark)",
+        },
+        olive: "var(--milpa-olive)",
+        line: "var(--milpa-line)",
+      },
+      fontFamily: {
+        display: ["var(--font-display)", "Georgia", "serif"],
+        body: ["var(--font-body)", "Arial", "Helvetica", "sans-serif"],
       },
     },
   },
