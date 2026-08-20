@@ -120,15 +120,39 @@
     "semantic_hash": "91c4b5ce38b1145fd8db0925d896cca4"
   },
   "src/app/dashboard/page.tsx": {
-    "mtime": 1787230877.809564,
-    "seen": 1787231592.280417,
-    "ast_hash": "ae261c0f564182efe2d5c9790bbf2bb9",
-    "semantic_hash": "ae261c0f564182efe2d5c9790bbf2bb9"
+    "mtime": 1787233106.332916,
+    "seen": 1787235289.2478073,
+    "ast_hash": "8d7d88e16c7820404d78f9dcb0d1bfd3",
+    "semantic_hash": "8d7d88e16c7820404d78f9dcb0d1bfd3"
   },
   "Documentation/Progress/Fase-2-persistencia-dashboard.md": {
     "mtime": 1787231165.6055713,
     "seen": 1787231592.280433,
     "ast_hash": "e9dbfb8aa27ec728df0ad0b444328bcd",
     "semantic_hash": "e9dbfb8aa27ec728df0ad0b444328bcd"
+  },
+  "src/app/dashboard/qr/page.tsx": {
+    "mtime": 1787233100.784916,
+    "seen": 1787235289.24781,
+    "ast_hash": "11fc1ce7e5810641d83a57d850437e83",
+    "semantic_hash": "11fc1ce7e5810641d83a57d850437e83"
+  },
+  "src/components/QrCard.tsx": {
+    "mtime": 1787233484.2049255,
+    "seen": 1787235289.2478192,
+    "ast_hash": "fc52ffec5300e59f10ad691604a652d4",
+    "semantic_hash": "fc52ffec5300e59f10ad691604a652d4"
+  },
+  "src/lib/site.ts": {
+    "mtime": 1787233095.0729158,
+    "seen": 1787235289.2478228,
+    "ast_hash": "7af1431716a4ccc1d1eb3e55eef2b6f5",
+    "semantic_hash": "7af1431716a4ccc1d1eb3e55eef2b6f5"
+  },
+  "Documentation/Progress/Fase-3-qr-dinamico.md": {
+    "mtime": 1787235093.4524472,
+    "seen": 1787235289.2478287,
+    "ast_hash": "ff661e456373c08275393c48140c5e83",
+    "semantic_hash": "ff661e456373c08275393c48140c5e83"
   }
 }
