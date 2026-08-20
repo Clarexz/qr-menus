@@ -26,11 +26,21 @@ export default async function DashboardPage() {
 
       <div className="mx-auto max-w-4xl px-4 pt-8 sm:px-8">
         {menu.categories.map((category) => (
-          <section key={category.id} className="mb-10">
-            <h2 className="mb-3 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.15em] text-olive">
+          <details key={category.id} open className="group mb-10">
+            <summary className="mb-3 flex cursor-pointer list-none items-center gap-3 text-sm font-semibold uppercase tracking-[0.15em] text-olive [&::-webkit-details-marker]:hidden">
+              <svg
+                aria-hidden
+                viewBox="0 0 20 20"
+                className="h-3.5 w-3.5 shrink-0 fill-none stroke-current stroke-[2.5] transition-transform group-open:rotate-90"
+              >
+                <path d="M7 4l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
               {category.name}
+              <span className="text-ink-soft normal-case tracking-normal">
+                ({category.items.length})
+              </span>
               <span className="h-px flex-1 bg-line" />
-            </h2>
+            </summary>
 
             <div className="space-y-3">
               {category.items.map((item) => (
@@ -128,7 +138,7 @@ export default async function DashboardPage() {
                 </p>
               ) : null}
             </div>
-          </section>
+          </details>
         ))}
 
         <section className="mt-12">
