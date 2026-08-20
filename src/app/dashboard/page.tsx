@@ -25,6 +25,80 @@ export default async function DashboardPage() {
       </header>
 
       <div className="mx-auto max-w-4xl px-4 pt-8 sm:px-8">
+        <section className="mb-12">
+          <h2 className="mb-3 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.15em] text-olive">
+            Agregar elemento
+            <span className="h-px flex-1 bg-line" />
+          </h2>
+
+          <form
+            action={createItemAction}
+            className="grid grid-cols-1 gap-3 rounded-2xl border border-dashed border-line bg-card p-4 sm:grid-cols-2 sm:p-5"
+          >
+            <label className="text-xs font-medium text-ink-soft sm:col-span-2">
+              Nombre
+              <input
+                name="name"
+                required
+                className="mt-1 w-full rounded-lg border border-line bg-white px-3 py-2 text-sm text-ink"
+              />
+            </label>
+
+            <label className="text-xs font-medium text-ink-soft sm:col-span-2">
+              Descripción
+              <textarea
+                name="description"
+                rows={2}
+                className="mt-1 w-full resize-none rounded-lg border border-line bg-white px-3 py-2 text-sm text-ink"
+              />
+            </label>
+
+            <label className="text-xs font-medium text-ink-soft">
+              Precio (MXN)
+              <input
+                name="price"
+                type="number"
+                min={0}
+                step="1"
+                required
+                className="mt-1 w-full rounded-lg border border-line bg-white px-3 py-2 text-sm text-ink"
+              />
+            </label>
+
+            <label className="text-xs font-medium text-ink-soft">
+              Categoría
+              <select
+                name="categoryId"
+                defaultValue={menu.categories[0]?.id}
+                className="mt-1 w-full rounded-lg border border-line bg-white px-3 py-2 text-sm text-ink"
+              >
+                {menu.categories.map((c) => (
+                  <option key={c.id} value={c.id}>
+                    {c.name}
+                  </option>
+                ))}
+              </select>
+            </label>
+
+            <label className="flex items-center gap-2 text-xs font-medium text-ink-soft sm:col-span-2">
+              <input
+                type="checkbox"
+                name="available"
+                defaultChecked
+                className="h-4 w-4 rounded border-line accent-terracotta"
+              />
+              Disponible
+            </label>
+
+            <button
+              type="submit"
+              className="rounded-lg bg-terracotta px-4 py-2 text-sm font-semibold text-cream transition-colors hover:bg-terracotta-dark sm:col-span-2"
+            >
+              Agregar
+            </button>
+          </form>
+        </section>
+
         {menu.categories.map((category) => (
           <details key={category.id} open className="group mb-10">
             <summary className="mb-3 flex cursor-pointer list-none items-center gap-3 text-sm font-semibold uppercase tracking-[0.15em] text-olive [&::-webkit-details-marker]:hidden">
@@ -134,86 +208,12 @@ export default async function DashboardPage() {
 
               {category.items.length === 0 ? (
                 <p className="rounded-2xl border border-dashed border-line px-4 py-6 text-center text-sm text-ink-soft">
-                  Sin platillos en esta categoría todavía.
+                  Sin elementos en esta categoría todavía.
                 </p>
               ) : null}
             </div>
           </details>
         ))}
-
-        <section className="mt-12">
-          <h2 className="mb-3 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.15em] text-olive">
-            Agregar platillo
-            <span className="h-px flex-1 bg-line" />
-          </h2>
-
-          <form
-            action={createItemAction}
-            className="grid grid-cols-1 gap-3 rounded-2xl border border-dashed border-line bg-card p-4 sm:grid-cols-2 sm:p-5"
-          >
-            <label className="text-xs font-medium text-ink-soft sm:col-span-2">
-              Nombre
-              <input
-                name="name"
-                required
-                className="mt-1 w-full rounded-lg border border-line bg-white px-3 py-2 text-sm text-ink"
-              />
-            </label>
-
-            <label className="text-xs font-medium text-ink-soft sm:col-span-2">
-              Descripción
-              <textarea
-                name="description"
-                rows={2}
-                className="mt-1 w-full resize-none rounded-lg border border-line bg-white px-3 py-2 text-sm text-ink"
-              />
-            </label>
-
-            <label className="text-xs font-medium text-ink-soft">
-              Precio (MXN)
-              <input
-                name="price"
-                type="number"
-                min={0}
-                step="1"
-                required
-                className="mt-1 w-full rounded-lg border border-line bg-white px-3 py-2 text-sm text-ink"
-              />
-            </label>
-
-            <label className="text-xs font-medium text-ink-soft">
-              Categoría
-              <select
-                name="categoryId"
-                defaultValue={menu.categories[0]?.id}
-                className="mt-1 w-full rounded-lg border border-line bg-white px-3 py-2 text-sm text-ink"
-              >
-                {menu.categories.map((c) => (
-                  <option key={c.id} value={c.id}>
-                    {c.name}
-                  </option>
-                ))}
-              </select>
-            </label>
-
-            <label className="flex items-center gap-2 text-xs font-medium text-ink-soft sm:col-span-2">
-              <input
-                type="checkbox"
-                name="available"
-                defaultChecked
-                className="h-4 w-4 rounded border-line accent-terracotta"
-              />
-              Disponible
-            </label>
-
-            <button
-              type="submit"
-              className="rounded-lg bg-terracotta px-4 py-2 text-sm font-semibold text-cream transition-colors hover:bg-terracotta-dark sm:col-span-2"
-            >
-              Agregar
-            </button>
-          </form>
-        </section>
       </div>
     </main>
   );
