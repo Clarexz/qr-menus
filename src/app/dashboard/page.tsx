@@ -26,12 +26,20 @@ export default async function DashboardPage() {
             </p>
           </div>
 
-          <a
-            href="/dashboard/qr"
-            className="mt-2 shrink-0 rounded-lg border border-line px-4 py-2 text-sm font-semibold text-ink-soft transition-colors hover:border-terracotta hover:text-terracotta"
-          >
-            Ver código QR
-          </a>
+          <div className="mt-2 flex shrink-0 gap-2">
+            <a
+              href="/dashboard/analytics"
+              className="rounded-lg border border-line px-4 py-2 text-sm font-semibold text-ink-soft transition-colors hover:border-terracotta hover:text-terracotta"
+            >
+              Analíticas
+            </a>
+            <a
+              href="/dashboard/qr"
+              className="rounded-lg border border-line px-4 py-2 text-sm font-semibold text-ink-soft transition-colors hover:border-terracotta hover:text-terracotta"
+            >
+              Ver código QR
+            </a>
+          </div>
         </div>
       </header>
 
