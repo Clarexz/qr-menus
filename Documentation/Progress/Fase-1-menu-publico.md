@@ -43,7 +43,7 @@
 
 ## Nota sobre el protocolo de cierre de fase
 
-El protocolo pide correr `/graphify` al cerrar cada fase para actualizar el grafo de conocimiento. En esta sesión remota `/graphify` no está disponible como skill ni como CLI instalada, así que este paso queda pendiente de ejecutarse en una sesión donde sí esté disponible (`graphify-out/` sigue reflejando el estado de la Fase 0).
+`/graphify` no venía preinstalado en esta sesión remota (es una skill de terceros, no del catálogo de plugins de claude.ai). Se instaló vía `pip install graphifyy && graphify install` con autorización explícita del usuario, y se corrió `graphify . --update` sobre el proyecto: el grafo pasó de 103 a 131 nodos y de 97 a 133 edges, incorporando `data/menu.json`, `/menu`, `src/lib/menu.ts`, la dirección de diseño y este mismo reporte de progreso. La instalación es local a este contenedor efímero y no persiste entre sesiones remotas.
 
 ## Siguiente paso
 
