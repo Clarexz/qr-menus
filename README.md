@@ -1,32 +1,14 @@
-# React + TypeScript + Vite
+# QR Menu Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Demo funcional de menú digital con QR dinámico y dashboard de edición, construido con Next.js 14 (App Router) y Tailwind CSS.
 
-Currently, two official plugins are available:
+Ver [Documentation/QR_MENU_Plan_Implementacion_Demo.md](Documentation/QR_MENU_Plan_Implementacion_Demo.md) para el alcance del proyecto y [Documentation/Plan_Implementacion_Por_Fases.md](Documentation/Plan_Implementacion_Por_Fases.md) para el plan de implementación por fases.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Desarrollo
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Abre [http://localhost:3000](http://localhost:3000).
