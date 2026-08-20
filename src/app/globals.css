@@ -3,24 +3,26 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --milpa-cream: #fbf3e7;
+  --milpa-card: #fffaf2;
+  --milpa-ink: #2a1f1a;
+  --milpa-ink-soft: #5c4c40;
+  --milpa-terracotta: #9c4221;
+  --milpa-terracotta-dark: #7a3219;
+  --milpa-olive: #5b6b3f;
+  --milpa-line: #e7d9c4;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--milpa-ink);
+  background: var(--milpa-cream);
+  font-family: var(--font-body), Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
+  .font-display {
+    font-family: var(--font-display), Georgia, serif;
+  }
   .text-balance {
     text-wrap: balance;
   }

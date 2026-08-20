@@ -1,1 +1,191 @@
-{}
+{
+  "business": {
+    "name": "Casa Milpa",
+    "logoUrl": "",
+    "primaryColor": "#9C4221"
+  },
+  "categories": [
+    {
+      "id": "cat-entradas",
+      "name": "Para Empezar",
+      "items": [
+        {
+          "id": "item-guac",
+          "name": "Guacamole de Molcajete",
+          "description": "Aguacate martajado con jitomate, cebolla morada, cilantro y un toque de serrano. Se sirve con totopos recién fritos.",
+          "price": 145,
+          "available": true,
+          "imageUrl": ""
+        },
+        {
+          "id": "item-esquites",
+          "name": "Esquites de la Casa",
+          "description": "Elote desgranado en caldillo de epazote, mayonesa, queso cotija y chile piquín al gusto.",
+          "price": 95,
+          "available": true,
+          "imageUrl": ""
+        },
+        {
+          "id": "item-queso-fundido",
+          "name": "Queso Fundido con Chorizo",
+          "description": "Mezcla de quesos gratinados con chorizo artesanal, servido con tortillas de maíz hechas a mano.",
+          "price": 165,
+          "available": true,
+          "imageUrl": ""
+        },
+        {
+          "id": "item-tostadas-atun",
+          "name": "Tostadas de Atún",
+          "description": "Atún sellado, aguacate, pepino y aderezo de chipotle sobre tostada de maíz azul.",
+          "price": 175,
+          "available": false,
+          "imageUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "cat-antojitos",
+      "name": "Antojitos",
+      "items": [
+        {
+          "id": "item-tacos-pastor",
+          "name": "Tacos al Pastor",
+          "description": "Orden de tres tacos con trompo marinado en adobo, piña asada, cebolla y cilantro.",
+          "price": 135,
+          "available": true,
+          "imageUrl": ""
+        },
+        {
+          "id": "item-tacos-suadero",
+          "name": "Tacos de Suadero",
+          "description": "Orden de tres tacos de suadero confitado, con salsa verde tatemada.",
+          "price": 130,
+          "available": true,
+          "imageUrl": ""
+        },
+        {
+          "id": "item-sope-tinga",
+          "name": "Sopes de Tinga",
+          "description": "Dos sopes de masa gruesa con tinga de pollo, frijol refrito, lechuga y crema.",
+          "price": 120,
+          "available": true,
+          "imageUrl": ""
+        },
+        {
+          "id": "item-quesadillas-flor",
+          "name": "Quesadillas de Flor de Calabaza",
+          "description": "Tortilla hecha a mano rellena de flor de calabaza y queso Oaxaca, con salsa martajada.",
+          "price": 110,
+          "available": true,
+          "imageUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "cat-fuertes",
+      "name": "Platos Fuertes",
+      "items": [
+        {
+          "id": "item-mole",
+          "name": "Pechuga en Mole Negro",
+          "description": "Pechuga de pollo bañada en mole negro oaxaqueño, arroz rojo y ajonjolí tostado.",
+          "price": 245,
+          "available": true,
+          "imageUrl": ""
+        },
+        {
+          "id": "item-costillas",
+          "name": "Costillas en Salsa de Tamarindo",
+          "description": "Costillas de cerdo braseadas por seis horas, glaseadas en salsa de tamarindo y chile guajillo.",
+          "price": 285,
+          "available": true,
+          "imageUrl": ""
+        },
+        {
+          "id": "item-pescado-zarandeado",
+          "name": "Pescado Zarandeado",
+          "description": "Filete de pescado del día marinado en achiote y adobo, asado al carbón. Se sirve con tortillas y salsa de chiltepín.",
+          "price": 265,
+          "available": true,
+          "imageUrl": ""
+        },
+        {
+          "id": "item-chile-relleno",
+          "name": "Chile Relleno de la Casa",
+          "description": "Chile poblano relleno de picadillo de res y pasas, capeado, en caldillo de jitomate.",
+          "price": 195,
+          "available": true,
+          "imageUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "cat-postres",
+      "name": "Postres",
+      "items": [
+        {
+          "id": "item-flan",
+          "name": "Flan Napolitano",
+          "description": "Receta de la abuela, con caramelo oscuro y un toque de canela.",
+          "price": 85,
+          "available": true,
+          "imageUrl": ""
+        },
+        {
+          "id": "item-pastel-tres-leches",
+          "name": "Pastel de Tres Leches",
+          "description": "Bizcocho esponjoso bañado en tres leches, con crema batida y canela.",
+          "price": 90,
+          "available": true,
+          "imageUrl": ""
+        },
+        {
+          "id": "item-churros",
+          "name": "Churros con Cajeta",
+          "description": "Cinco churros espolvoreados con azúcar y canela, con cajeta para acompañar.",
+          "price": 80,
+          "available": true,
+          "imageUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "cat-bebidas",
+      "name": "Bebidas",
+      "items": [
+        {
+          "id": "item-agua-jamaica",
+          "name": "Agua de Jamaica",
+          "description": "Preparada en casa, poco dulce.",
+          "price": 45,
+          "available": true,
+          "imageUrl": ""
+        },
+        {
+          "id": "item-agua-horchata",
+          "name": "Agua de Horchata",
+          "description": "Con canela molida al momento.",
+          "price": 45,
+          "available": true,
+          "imageUrl": ""
+        },
+        {
+          "id": "item-michelada",
+          "name": "Michelada Casa Milpa",
+          "description": "Cerveza clara, limón, salsa inglesa y sal de gusano en el borde.",
+          "price": 95,
+          "available": true,
+          "imageUrl": ""
+        },
+        {
+          "id": "item-mezcal",
+          "name": "Mezcal Espadín (copa)",
+          "description": "Servido con rodajas de naranja y sal de gusano.",
+          "price": 120,
+          "available": true,
+          "imageUrl": ""
+        }
+      ]
+    }
+  ]
+}
